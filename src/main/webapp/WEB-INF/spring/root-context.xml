@@ -11,7 +11,7 @@
 	<!--<context:property-placeholder location="classpath:jdbc.properties" system-properties-mode="OVERRIDE"/>-->
 
 	<annotation-driven />
-	<context:component-scan base-package="com.cava.service"/>
+	<context:component-scan base-package="com.cava"/>
 
 	<resources mapping="/resources/**" location="/WEB-INF/resources/" />
 

@@ -1,8 +1,9 @@
+
 CREATE TABLE sensor (
   id SERIAL PRIMARY KEY,
   username TEXT NOT NULL,
-  time_in DATE NOT NULL,
-  time_out DATE NOT NULL
+  time_in timestamp NOT NULL,
+  time_out timestamp NOT NULL
 );
 
 CREATE TABLE user_data (
@@ -25,3 +26,5 @@ CREATE TABLE users (
   enabled INTEGER NOT NULL DEFAULT 1,
   status CHARACTER(20) NOT NULL
 );
+
+DROP TABLE sensor;

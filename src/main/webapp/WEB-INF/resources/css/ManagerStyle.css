@@ -1,0 +1,141 @@
+html,body{
+    min-height: 500px;
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+.head{
+    height: 80px;
+    background-color: black;
+    width:100%;
+}
+
+.content{
+    position: relative;
+    min-height: 500px;
+    padding:8px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+}
+
+.hideBtnProduct{
+    width: 150px;
+    display:block ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hideBtnDish{
+    align-content: center;
+    width: 150px;
+    display:block ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hideBtnOrder{
+    width: 150px;
+    display:block ;
+    margin-top: 20px;
+}
+
+
+.button-hide{
+    position: absolute;
+    width: 200px;
+}
+.first-content{
+    margin-top: 15px;
+    position: absolute;
+    width:1100px;
+    margin-left: 200px;
+}
+.second-content{
+    display: inline;
+    margin-top: 15px;
+    position: absolute;
+    width:1100px;
+    margin-left: 200px;
+}
+.third-content{
+    display: inline;
+    margin-top: 15px;
+    position: absolute;
+    width:1100px;
+    margin-left: 200px;
+}
+
+/*table*/
+.dish-table{
+    position: absolute;
+    width:500px;
+}
+.product-table{
+    width: 900px;
+}
+.order-table{
+    width: 600px;
+}
+
+.address-table{
+   width:100px;
+}
+
+.dish-content{
+    display: block;
+    position: absolute;
+    width: 590px;
+    margin-left:550px;
+}
+
+.add-name-dish{
+    width: 400px;
+    margin-bottom: 10px;
+}
+#price{
+    width: 120px;
+}
+.price-span{
+    display: inline;
+    height:34px;
+    font-size: 17px;
+}
+
+.add-dish-btn{
+    margin-top: 20px;
+}
+
+#search{
+    width:300px;
+    margin-left: 200px;
+}
+
+#input-recipes{
+    display: block;
+    width: 400px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+/*pager*/
+div.pager {
+    text-align: left;
+    margin: 1em 0;
+}
+
+div.pager span {
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8;
+    text-align: center;
+    cursor: pointer;
+    background: #eeeeee;
+    border-radius: 0.8em;
+    border: 2px solid #cccccc;
+    margin-right: 0.5em;
+}
+
+div.pager span.active {
+    background: #428bca;
+    color: #fff;
+}

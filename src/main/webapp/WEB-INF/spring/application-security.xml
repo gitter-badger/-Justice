@@ -11,7 +11,8 @@
 	<http pattern="/logout/user/" security="none" />
 	
 	<http auto-config="true" use-expressions="true">
-		<intercept-url pattern="/admin/**" access="hasRole('ROLE_USER')" />
+		<!--<intercept-url pattern="/admin/**" access="hasRole('ROLE_USER')" />-->
+        <!--<intercept-url pattern="/manager/**" access="hasRole('ROLE_USER')" />-->
 		<!--<intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')" />-->
         <!--<intercept-url pattern="/operator/**" access="hasRole('ROLE_ADMIN')"/>-->
         <!--<intercept-url pattern="/mainManager/**" access="hasRole('ROLE_ADMIN')"/>-->
