@@ -11,10 +11,10 @@
 <head>
   <title>Login page</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="resources/css/style.css" media="all">
+  <link rel="stylesheet" href="/resources/css/style.css" media="all">
 
   <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-  <script src="resources/js/index.js"></script>
+  <script src="/resources/js/index.js"></script>
 </head>
 
 <body onload='document.loginForm.username.focus();'>
