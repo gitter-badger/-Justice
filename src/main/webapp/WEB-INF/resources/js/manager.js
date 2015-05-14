@@ -5,25 +5,25 @@
 //hide button
 $(document).ready(function() {
     $(".product-table").hide();
-    //$(".order-table").hide();
+    $(".order-table").hide();
 
 
     $(".hideBtnProduct").click(function (){
         $(".second-content").hide();
-        $(".order-table").hide();
+        $(".third-content").hide();
         $(".product-table").slideToggle();
     });
 
     $(".hideBtnDish").click(function(){
         $(".product-table").hide();
-        $(".order-table").hide();
+        $(".third-content").hide();
         $(".second-content").slideToggle();
     });
 
     $(".hideBtnOrder").click(function(){
         $(".product-table").hide();
         $(".second-content").hide();
-        $(".order-table").slideToggle();
+        $(".third-content").slideToggle();
     });
 });
 

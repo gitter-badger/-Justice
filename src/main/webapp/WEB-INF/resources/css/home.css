@@ -8,10 +8,15 @@ body {
     margin-top: 100px;
 }
 
+
 .container {
     margin:0 auto;
     padding:0;
     width:940px;
+}
+
+.section-header{
+   text-align: center;
 }
 
 p {
@@ -90,4 +95,19 @@ p {
 }
 .blue {
     background-color:#464F5A;
+}
+
+@media screen and (max-width: 980px) {
+    .container{
+        width: 60%
+    }
+    .one-third{
+        margin: 15px;
+    }
+    .section-header{
+        font-size: 80%;
+        text-align: left;
+    }
+
+
 }

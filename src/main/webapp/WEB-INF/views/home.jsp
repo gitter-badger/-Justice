@@ -48,12 +48,11 @@
         </div><!--/.nav-collapse -->
     </div>
 </div>
-
 <div id="main">
     <div class="container">
         <div class="row">
             <div class="full">
-                <h1 class="section-header text-center">Welcome to <span itemprop="name">Justice management</span></h1>
+                <h1 class="section-header">Welcome to <span itemprop="name">Justice management</span></h1>
             </div>
         </div>
 

@@ -4,7 +4,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Employee Menu</title>
+    <title>Empl Menu</title>
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/css/ManagerStyle.css"/>
     <script src="/resources/js/jquery-1.11.2.min.js" type="text/javascript"></script>

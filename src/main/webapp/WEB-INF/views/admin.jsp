@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/mainManager/">Justice</a>
+            <a class="navbar-brand" href="/admin/">Justice</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -39,28 +39,28 @@
     </div>
 </div>
 <div class="content">
-    <h1>Main Manager</h1>
+    <h1>Justice Admin</h1>
     <div>
         <input id="search" type="text" class="form-control" placeholder="Filter"/>
     </div>
     <div class="button-hide">
-        <button class="hideBtnProduct btn btn-primary">Product Statistic</button>
-        <button class="hideBtnDish btn btn-primary">Dish Statistic</button>
-        <button class="hideBtnOrder btn btn-primary">Order Statistic</button>
+        <button class="hideBtnProduct btn btn-primary">Employee stat</button>
+        <button class="hideBtnDish btn btn-primary">Account statistic</button>
+        <button class="hideBtnOrder btn btn-primary">Add employee</button>
     </div>
     <div class="first-content">
         <div class="product-table">
             <table class="table table-hover allProduct paginated">
                 <tr>
-                    <th> ID </th>
-                    <th> Name</th>
-                    <th> Price </th>
+                    <th> UserName </th>
+                    <th> Time Enter</th>
+                    <th> Time Out </th>
                 </tr>
-                <c:forEach var="product" items="${productList}">
-                    <tr class="product" id="product${product.id}">
-                        <td class = "id-product">${product.id}</td>
-                        <td> ${product.name}</td>
-                        <td>${product.price}</td>
+                <c:forEach var="sensor" items="${sensorList}">
+                    <tr class="product" id="product${sensor.id}">
+                        <td class = "id-product">${sensor.login}</td>
+                        <td> ${sensor.timeIn}</td>
+                        <td>${sensor.timeOut}</td>
                     </tr>
                 </c:forEach>
             </table>
@@ -72,34 +72,33 @@
                 <tr>
                     <th> ID </th>
                     <th> Name</th>
-                    <th> Price </th>
+                    <th> Bill </th>
+                    <th> Rate per hour</th>
                 </tr>
                 <tbody>
-                <c:forEach var="dish" items="${dishList}">
+                <c:forEach var="employee" items="${emploeeList}">
                     <tr class="dish">
-                        <td>${dish.id}</td>
-                        <td> ${dish.name}</td>
-                        <td>${dish.price}</td>
+                        <td>${employee.id}</td>
+                        <td> ${employee.fullName}</td>
+                        <td>${employee.bill}</td>
+                        <td>${employee.rate}</td>
                     </tr>
                 </c:forEach>
                 </tbody>
             </table>
         </div>
-
     </div>
     <div class="third-content">
-        <div class="order-table">
-            <div class="dish-content">
-                <form:form method="post" action="add/dish">
-                    <input class="add-name-dish form-control" name="name" type="text" placeholder="Name dish">
-                    <div class="input-group">
-                        <input id="price" type="text" name="price" class="form-control" placeholder="Enter price" aria-describedby="basic-addon1"/>
-                        <span class="input-group-addon price-span">UAH</span>
-                        <input id="input-recipes" name="description" type="text" class="form-control" placeholder="Enter recipes">
-                    </div>
-                    <input type="submit" class="btn btn-success add-dish-btn" value="Add dish">
-                </form:form>
-            </div>
+        <div class="dish-content">
+            <form:form method="post" action="add/dish">
+                <input class="add-name-dish form-control" name="name" type="text" placeholder="Name employee">
+                <div class="input-group">
+                    <input id="price" type="text" name="price" class="form-control" placeholder="Enter rate" aria-describedby="basic-addon1"/>
+                    <span class="input-group-addon price-span">UAH</span>
+                    <input id="input-recipes" name="description" type="text" class="form-control" placeholder="Enter rate per hour">
+                </div>
+                <input type="submit" class="btn btn-success add-dish-btn" value="Add dish">
+            </form:form>
         </div>
     </div>
 </div>

@@ -31,7 +31,7 @@ public class AdminController {
         List<Employee> employeeList = employeeDAO.getAll();
         List<Sensor> sensorList =  sensorDAO.getAll();
 
-        ModelAndView modelAndView = new ModelAndView("manager");
+        ModelAndView modelAndView = new ModelAndView("admin");
         modelAndView.addObject("emploeeList",employeeList);
         modelAndView.addObject("sensorList",sensorList);
         return modelAndView;
