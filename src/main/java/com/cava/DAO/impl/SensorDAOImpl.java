@@ -18,6 +18,7 @@ public class SensorDAOImpl implements SensorDAO {
 
     @Override
     public List<Sensor> getAll() {
-        return sessionFactory.getCurrentSession().createCriteria(Sensor.class).list();
+
+        return sessionFactory.getCurrentSession().createQuery("FROM Sensor").list();
     }
 }

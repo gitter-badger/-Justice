@@ -18,7 +18,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
     @Override
     public List<Employee> getAll() {
-        return sessionFactory.getCurrentSession().createCriteria(Employee.class).list();
+          return sessionFactory.getCurrentSession().createQuery("FROM Employee").list();
     }
 
 }

@@ -19,7 +19,7 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public List<User> getAll() {
-        return sessionFactory.getCurrentSession().createCriteria(User.class).list();
+        return sessionFactory.getCurrentSession().createQuery("FROM User").list();
     }
 
 }
