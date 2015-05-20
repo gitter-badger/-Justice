@@ -15,7 +15,7 @@ import java.util.List;
 public class UserDAOImpl implements UserDAO {
 
     @Autowired
-    private SessionFactory sessionFactory;
+    private SessionFactory  sessionFactory;
 
     @Override
     public List<User> getAll() {

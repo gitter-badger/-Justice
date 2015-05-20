@@ -99,7 +99,7 @@ p {
 
 @media screen and (max-width: 980px) {
     .container{
-        width: 60%
+        width: 40%
     }
     .one-third{
         margin: 15px;

@@ -17,7 +17,7 @@
         <div class=" navbar-header pull-right">
             <p class="navbar-text">
                 <sec:authorize access="isAuthenticated()">
-                    <a class="navbar-link" href="<c:url value="/logout"/>">Logout</a>
+                    <a class="navbar-link" href="<c:url value="/"/>">Logout</a>
                 </sec:authorize>
             </p>
         </div>
@@ -95,10 +95,12 @@
                 <div class="input-group">
                     <input id="price" type="text" name="price" class="form-control" placeholder="Enter rate" aria-describedby="basic-addon1"/>
                     <span class="input-group-addon price-span">UAH</span>
-                    <input id="input-recipes" name="description" type="text" class="form-control" placeholder="Enter rate per hour">
+                    <input id="input-recipes" name="description" type="text" class="form-control" placeholder="account">
                 </div>
-                <input type="submit" class="btn btn-success add-dish-btn" value="Add dish">
+                <input type="submit" class="btn btn-success add-dish-btn" value="Add employee">
             </form:form>
+            <input id="input-bonus" name="description" type="text" class="form-control" placeholder="enter bonus">
+            <input type="submit" class="btn btn-success add-dish-btn" value="Add bonus">
         </div>
     </div>
 </div>

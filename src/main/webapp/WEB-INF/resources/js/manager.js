@@ -6,24 +6,25 @@
 $(document).ready(function() {
     $(".product-table").hide();
     $(".order-table").hide();
+    $(".dish-content").hide();
 
 
     $(".hideBtnProduct").click(function (){
         $(".second-content").hide();
-        $(".third-content").hide();
+        $(".dish-content").hide();;
         $(".product-table").slideToggle();
     });
 
     $(".hideBtnDish").click(function(){
         $(".product-table").hide();
-        $(".third-content").hide();
+        $(".dish-content").hide();
         $(".second-content").slideToggle();
     });
 
     $(".hideBtnOrder").click(function(){
         $(".product-table").hide();
         $(".second-content").hide();
-        $(".third-content").slideToggle();
+        $(".dish-content").slideToggle();
     });
 });
 

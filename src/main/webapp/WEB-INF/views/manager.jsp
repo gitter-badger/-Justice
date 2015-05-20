@@ -18,7 +18,7 @@
         <div class=" navbar-header pull-right">
             <p class="navbar-text">
                 <sec:authorize access="isAuthenticated()">
-                    <a class="navbar-link" href="<c:url value="/logout"/>">Logout</a>
+                    <a class="navbar-link" href="<c:url value="/"/>">Logout</a>
                 </sec:authorize>
             </p>
         </div>

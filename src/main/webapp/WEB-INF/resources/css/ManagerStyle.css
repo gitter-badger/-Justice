@@ -84,7 +84,6 @@ html,body{
     display: block;
     position: absolute;
     width: 590px;
-    margin-left:550px;
 }
 
 .add-name-dish{
@@ -137,4 +136,29 @@ div.pager span {
 div.pager span.active {
     background: #428bca;
     color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+    .content{
+        width: 60%
+    }
+    .button-hide{
+
+    }
+    .first-content{
+        margin-top:220px ;
+        margin-left: 5px;
+        font-size: 80%;
+    }
+    .second-content{
+        margin-top:220px ;
+        margin-left: 5px;
+        font-size: 80%;
+    }
+
+    .third-content{
+        margin-top:220px ;
+        margin-left: 5px;
+        font-size: 80%;
+    }
 }
